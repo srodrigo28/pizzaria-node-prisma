@@ -1,0 +1,26 @@
+{
+  "name": "api-pizzaria",
+  "version": "1.0.0",
+  "description": "```Link\r https://www.udemy.com/course/dev-fullstack/learn/lecture/31683250#overview\r ```",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "ts-node-dev src/server.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "cors": "^2.8.5",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.14.0",
+    "express": "^4.19.2",
+    "express-async-errors": "^3.1.1",
+    "prisma": "^5.14.0"
+  }
+}
