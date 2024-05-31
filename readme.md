@@ -3,6 +3,10 @@
 https://www.udemy.com/course/dev-fullstack/learn/lecture/31683250#overview
 ```
 
+```Último visto 67
+https://www.udemy.com/course/dev-fullstack/learn/lecture/31683288#overview
+```
+
 #### Primeiros passos
 * npm init -y
 #### Todas dependências
@@ -47,6 +51,25 @@ npm i @prisma/client
 ```
 npx prisma init
 ```
+##### Prisma Models
+```
+model User {
+  id String @id @default(uuid())
+  
+  name String
+  email String
+  password String
+
+  created_at DateTime? @default(now())
+  updated_at DateTime? @default(now())
+
+  @@map("users")
+}
+```
+* 1. Prisma Migration
+```
+npx prisma migrate dev
+```
 #### Package.json
 ```
 "scripts": {
@@ -58,6 +81,11 @@ npx prisma init
 * Prisma
 * JWT
 
+#### Rotas criadas
+* Users
+``` POST
+http://localhost:3333/users
+```
 #### Observação
 - Pode também deixar seu script start apenas para fazer compilar e dar o start, deixando ele assim:
 
